@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~213/code/25-sync-basic</title>
+ </head>
+ <body>
+<h1>Index of /~213/code/25-sync-basic</h1>
+  <table>
+   <tr><th valign="top"><img src="../../../icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=D">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="../../../icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/folder.gif" alt="[DIR]"></td><td><a href="pthreads_interpose/index.html">pthreads_interpose/</a></td><td align="right">2019-11-15 14:13  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/folder.gif" alt="[DIR]"></td><td><a href="qprob/index.html">qprob/</a></td><td align="right">2019-08-21 12:52  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="sharing.c">sharing.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">665 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="sbuf.h">sbuf.h</a></td><td align="right">2019-08-21 12:52  </td><td align="right">704 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="README.txt">README.txt</a></td><td align="right">2019-11-15 14:06  </td><td align="right">851 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2019-11-15 13:59  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="badcnt.c">badcnt.c</a></td><td align="right">2019-11-19 14:00  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="goodcnt.c">goodcnt.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="goodmcnt.c">goodmcnt.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="badcnt.s">badcnt.s</a></td><td align="right">2019-11-19 14:00  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="sbuf.c">sbuf.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">1.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="produce-consume.c">produce-consume.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="goodcnt.s">goodcnt.s</a></td><td align="right">2019-11-15 14:13  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="goodmcnt.s">goodmcnt.s</a></td><td align="right">2019-11-15 14:13  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="csapp.h">csapp.h</a></td><td align="right">2019-08-21 12:52  </td><td align="right">6.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="pthreads_wrapper.so">pthreads_wrapper.so</a></td><td align="right">2019-11-15 14:13  </td><td align="right"> 13K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="csapp.c">csapp.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 23K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="sharing">sharing</a></td><td align="right">2019-11-15 14:13  </td><td align="right"> 31K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="badcnt">badcnt</a></td><td align="right">2019-11-19 14:00  </td><td align="right"> 31K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="goodcnt">goodcnt</a></td><td align="right">2019-11-15 14:13  </td><td align="right"> 31K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="produce-consume">produce-consume</a></td><td align="right">2019-11-15 14:13  </td><td align="right"> 31K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="goodmcnt">goodmcnt</a></td><td align="right">2019-11-15 14:13  </td><td align="right"> 31K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.18 (Ubuntu) Server at www.cs.cmu.edu Port 443</address>
+</body></html>

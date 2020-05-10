@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~213/code/08-machine-data</title>
+ </head>
+ <body>
+<h1>Index of /~213/code/08-machine-data</h1>
+  <table>
+   <tr><th valign="top"><img src="../../../icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="../../../icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="structure.64s">structure.64s</a></td><td align="right">2019-09-19 07:00  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="structure.c">structure.c</a></td><td align="right">2019-09-19 07:00  </td><td align="right">653 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="zip.64s">zip.64s</a></td><td align="right">2019-09-16 10:32  </td><td align="right">2.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="struct_eg.64s">struct_eg.64s</a></td><td align="right">2019-09-16 10:32  </td><td align="right">389 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="float.64s">float.64s</a></td><td align="right">2019-09-16 10:32  </td><td align="right">2.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="array.64s">array.64s</a></td><td align="right">2019-09-16 10:32  </td><td align="right">2.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2019-09-16 10:32  </td><td align="right">569 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="decls.c">decls.c</a></td><td align="right">2015-09-24 13:00  </td><td align="right">1.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="decls">decls</a></td><td align="right">2015-09-24 12:54  </td><td align="right">8.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="README.txt">README.txt</a></td><td align="right">2015-08-11 12:32  </td><td align="right">266 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="float.c">float.c</a></td><td align="right">2015-08-06 16:00  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="struct_eg.c">struct_eg.c</a></td><td align="right">2015-08-06 15:00  </td><td align="right">377 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="array.c">array.c</a></td><td align="right">2015-08-06 14:08  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="zip.c">zip.c</a></td><td align="right">2015-08-06 13:47  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.18 (Ubuntu) Server at www.cs.cmu.edu Port 443</address>
+</body></html>

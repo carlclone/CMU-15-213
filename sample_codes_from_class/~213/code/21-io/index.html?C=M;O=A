@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~213/code/21-io</title>
+ </head>
+ <body>
+<h1>Index of /~213/code/21-io</h1>
+  <table>
+   <tr><th valign="top"><img src="../../../icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=D">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="../../../icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="csapp.c">csapp.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 17K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="csapp.h">csapp.h</a></td><td align="right">2019-08-21 12:52  </td><td align="right">5.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="csapp.o">csapp.o</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 76K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="ffiles1">ffiles1</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 61K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="ffiles1.c">ffiles1.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">444 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="ffiles3.c">ffiles3.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">440 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="ffiles3.out">ffiles3.out</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 11 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="hello">hello</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 60K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="hello.c">hello.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">191 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="statcheck">statcheck</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 61K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="statcheck.c">statcheck.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">646 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="showfile2_buf.c">showfile2_buf.c</a></td><td align="right">2019-11-04 15:08  </td><td align="right">360 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="showfile2_buf">showfile2_buf</a></td><td align="right">2019-11-04 15:14  </td><td align="right"> 62K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="showfile1_nobuf.c">showfile1_nobuf.c</a></td><td align="right">2019-11-04 15:18  </td><td align="right">294 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="showfile1_nobuf">showfile1_nobuf</a></td><td align="right">2019-11-04 15:18  </td><td align="right"> 62K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2019-11-04 15:29  </td><td align="right">408 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="names.txt">names.txt</a></td><td align="right">2019-11-04 15:34  </td><td align="right">539 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="README.txt">README.txt</a></td><td align="right">2019-11-04 15:35  </td><td align="right">528 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="showfile3_stdio.c">showfile3_stdio.c</a></td><td align="right">2019-11-04 15:45  </td><td align="right">332 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="showfile4_rio.c">showfile4_rio.c</a></td><td align="right">2019-11-04 15:52  </td><td align="right">417 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="showfile3_stdio">showfile3_stdio</a></td><td align="right">2019-11-04 15:52  </td><td align="right"> 62K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="showfile4_rio">showfile4_rio</a></td><td align="right">2019-11-04 15:52  </td><td align="right"> 62K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="showfile5_mmap.c">showfile5_mmap.c</a></td><td align="right">2019-11-04 16:06  </td><td align="right">381 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="ffiles3">ffiles3</a></td><td align="right">2019-11-04 16:13  </td><td align="right"> 62K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="abcde.txt">abcde.txt</a></td><td align="right">2019-11-04 16:14  </td><td align="right">  6 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="showfile5_mmap">showfile5_mmap</a></td><td align="right">2019-11-04 16:15  </td><td align="right"> 63K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="ffiles2.c">ffiles2.c</a></td><td align="right">2019-11-04 16:16  </td><td align="right">436 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="ffiles2">ffiles2</a></td><td align="right">2019-11-04 16:16  </td><td align="right"> 62K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/folder.gif" alt="[DIR]"></td><td><a href="qprob/index.html">qprob/</a></td><td align="right">2019-11-04 16:32  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.18 (Ubuntu) Server at www.cs.cmu.edu Port 443</address>
+</body></html>

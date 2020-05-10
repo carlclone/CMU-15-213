@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~213/code/09-machine-advanced</title>
+ </head>
+ <body>
+<h1>Index of /~213/code/09-machine-advanced</h1>
+  <table>
+   <tr><th valign="top"><img src="../../../icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="../../../icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/layout.gif" alt="[   ]"></td><td><a href="demos.pdf">demos.pdf</a></td><td align="right">2019-09-23 19:13  </td><td align="right">113K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="demos.txt">demos.txt</a></td><td align="right">2019-09-23 17:32  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="README.txt">README.txt</a></td><td align="right">2019-09-23 16:48  </td><td align="right">930 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2019-09-23 16:47  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="locate64">locate64</a></td><td align="right">2019-09-23 09:27  </td><td align="right">8.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="locate.c">locate.c</a></td><td align="right">2019-09-23 09:26  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="hexify">hexify</a></td><td align="right">2019-09-18 13:12  </td><td align="right">8.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="smash-hex.txt">smash-hex.txt</a></td><td align="right">2019-09-18 13:07  </td><td align="right"> 96 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="hexify-new">hexify-new</a></td><td align="right">2019-09-18 12:45  </td><td align="right">8.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="hexify.c">hexify.c</a></td><td align="right">2019-09-18 12:45  </td><td align="right">244 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="runaway.c">runaway.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">469 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="runaway">runaway</a></td><td align="right">2019-08-21 12:52  </td><td align="right">8.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="locate-all.xlsx">locate-all.xlsx</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 52K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="gadget.c">gadget.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">168 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="bufdemo.c">bufdemo.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">597 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="bufdemo.64s">bufdemo.64s</a></td><td align="right">2019-08-21 12:52  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="bufdemo.64ns">bufdemo.64ns</a></td><td align="right">2019-08-21 12:52  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="bufdemo.64nd">bufdemo.64nd</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 11K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="bufdemo.64d">bufdemo.64d</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 13K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="bufdemo-sp">bufdemo-sp</a></td><td align="right">2019-08-21 12:52  </td><td align="right">8.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="bufdemo-nsp">bufdemo-nsp</a></td><td align="right">2019-08-21 12:52  </td><td align="right">8.6K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.18 (Ubuntu) Server at www.cs.cmu.edu Port 443</address>
+</body></html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~213/code/06-machine-control</title>
+ </head>
+ <body>
+<h1>Index of /~213/code/06-machine-control</h1>
+  <table>
+   <tr><th valign="top"><img src="../../../icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="../../../icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="switch">switch</a></td><td align="right">2016-09-15 12:56  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="switch.64s">switch.64s</a></td><td align="right">2016-09-15 12:55  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="switch.64d">switch.64d</a></td><td align="right">2016-09-15 12:55  </td><td align="right"> 16K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="loop.O1-64s">loop.O1-64s</a></td><td align="right">2016-09-15 12:55  </td><td align="right">2.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="loop.64s">loop.64s</a></td><td align="right">2016-09-15 12:55  </td><td align="right">2.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="control.64s">control.64s</a></td><td align="right">2016-09-15 12:55  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="control.64d">control.64d</a></td><td align="right">2016-09-15 12:55  </td><td align="right"> 14K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="control.64bs">control.64bs</a></td><td align="right">2016-09-15 12:55  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2016-09-15 12:55  </td><td align="right">759 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="README.txt">README.txt</a></td><td align="right">2016-09-12 11:43  </td><td align="right">393 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="control.c">control.c</a></td><td align="right">2016-09-12 11:41  </td><td align="right">793 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="switch.c">switch.c</a></td><td align="right">2016-09-12 11:38  </td><td align="right">811 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="loop.c">loop.c</a></td><td align="right">2015-07-16 22:10  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.18 (Ubuntu) Server at www.cs.cmu.edu Port 443</address>
+</body></html>

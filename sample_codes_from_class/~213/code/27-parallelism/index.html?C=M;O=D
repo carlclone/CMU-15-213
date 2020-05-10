@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~213/code/27-parallelism</title>
+ </head>
+ <body>
+<h1>Index of /~213/code/27-parallelism</h1>
+  <table>
+   <tr><th valign="top"><img src="../../../icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="../../../icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/folder.gif" alt="[DIR]"></td><td><a href="tmp/index.html">tmp/</a></td><td align="right">2019-08-21 12:52  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="realtimer.o">realtimer.o</a></td><td align="right">2019-08-21 12:52  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="realtimer.h">realtimer.h</a></td><td align="right">2019-08-21 12:52  </td><td align="right">176 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="realtimer.c">realtimer.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">437 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="psum.xlsx">psum.xlsx</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 26K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="psum.c">psum.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right">6.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="psum-spacing.txt">psum-spacing.txt</a></td><td align="right">2019-08-21 12:52  </td><td align="right">500 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="psum-spacing.pl">psum-spacing.pl</a></td><td align="right">2019-08-21 12:52  </td><td align="right">605 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="psum-run.pl">psum-run.pl</a></td><td align="right">2019-08-21 12:52  </td><td align="right">739 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="psum-data.txt">psum-data.txt</a></td><td align="right">2019-08-21 12:52  </td><td align="right">697 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="psum-backup.txt">psum-backup.txt</a></td><td align="right">2019-08-21 12:52  </td><td align="right">697 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="psum">psum</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 29K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/folder.gif" alt="[DIR]"></td><td><a href="pqsort/index.html">pqsort/</a></td><td align="right">2019-08-21 12:52  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/folder.gif" alt="[DIR]"></td><td><a href="pqsort-dbug/index.html">pqsort-dbug/</a></td><td align="right">2019-08-21 12:52  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="csapp.o">csapp.o</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="csapp.h">csapp.h</a></td><td align="right">2019-08-21 12:52  </td><td align="right">5.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/text.gif" alt="[TXT]"></td><td><a href="csapp.c">csapp.c</a></td><td align="right">2019-08-21 12:52  </td><td align="right"> 17K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="../../../icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2019-08-21 12:52  </td><td align="right">775 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.18 (Ubuntu) Server at www.cs.cmu.edu Port 443</address>
+</body></html>
