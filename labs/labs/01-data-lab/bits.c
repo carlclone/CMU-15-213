@@ -143,7 +143,31 @@ NOTES:
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  return 2;
+    /*
+     * 思路:
+     * 先进行与操作 , 然后两个值都取反后再进行与操作 , 如果不变则set to 1,否则为0
+     * 100 & 101 = 100
+     * ~100 = 011
+     * ~101 = 010
+     * 011 & 010 = 010
+     *
+     * 因为exactly one , 所以对两个结果取反再进行与操作
+     * ~100 = 011
+     * ~010 = 101
+     *
+     * 011 & 101 = 001
+     */
+
+    int res1 = x & y;
+    int reverse_x = ~x;
+    int reverse_y = ~y;
+
+    int res2 = reverse_x & reverse_y;
+
+    int rev_res1 = ~res1;
+    int rev_res2 = ~res2;
+
+    return rev_res1 & rev_res2;
 }
 /* 
  * tmin - return minimum two's complement integer 
