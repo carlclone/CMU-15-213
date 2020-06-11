@@ -1,4 +1,17 @@
 
+## Lab Assignments
+
+- [x] C Programming Lab
+- [ ] Data Lab
+- [ ] Bomb Lab
+- [ ] Attack Lab
+- [ ] Cache Lab
+- [ ] Shell Lab
+- [ ] Malloc Lab
+- [ ] Proxy Lab
+
+
+
 # Lab1 Data Lab
 
 [sof - xor](https://stackoverflow.com/questions/14526584/what-does-the-xor-operator-do)
@@ -18,7 +31,7 @@ XOR is a binary operation, it stands for "exclusive or", that is to say the resu
 
 [wiki - c programming](https://en.wikibooks.org/wiki/C_Programming)
 
-`随记: 做Lab形成了一个好习惯:先写和看test case ,再实现(最好过完完整的case再开始写) , 可以说test case的数量就是进度条长度`
+`随记: 做Lab形成的一个好习惯:先写和看test case ,再实现(最好过完完整的case再开始写) , 可以说test case的数量就是进度条长度`
 
 
 # 资料
