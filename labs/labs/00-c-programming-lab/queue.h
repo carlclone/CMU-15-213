@@ -27,6 +27,7 @@ typedef struct ELE {
 typedef struct {
     list_ele_t *head;  /* Linked list of elements */
     list_ele_t *tail;
+    int size;
     /*
       You will need to add more fields to this structure
       to efficiently implement q_size and q_insert_tail

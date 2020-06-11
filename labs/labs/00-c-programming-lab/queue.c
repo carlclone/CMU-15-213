@@ -27,7 +27,7 @@ queue_t *q_new()
     queue_t *q =  malloc(sizeof(queue_t));
     /* What if malloc returned NULL? */
     if (q==NULL) {
-        return q;
+        return NULL;
     }
 
 
@@ -48,7 +48,6 @@ void q_free(queue_t *q)
         free(ele->value)
         free(ele)
     }
-
 }
 
 /*
@@ -75,6 +74,7 @@ bool q_insert_head(queue_t *q, char *s)
     newh->next = q->head;
     str = malloc(sizeof(char));
     if (str==NULL) {
+        free(newh);
         return false;
     }
     newh->value = str
@@ -98,9 +98,13 @@ bool q_insert_tail(queue_t *q, char *s)
     /* You need to write the complete code for this function */
     /* Remember: It should operate in O(1) time */
     list_ele_t *ele = malloc(sizeof(list_ele_t));
+    if (ele==NULL) {
+        return false;
+    }
     ele->value = s;
 
-
+    q->tail->next = ele;
+    q->tail = ele;
 
     return false;
 }
@@ -128,7 +132,7 @@ int q_size(queue_t *q)
 {
     /* You need to write the code for this function */
     /* Remember: It should operate in O(1) time */
-    return 0;
+    return q->size;
 }
 
 /*
