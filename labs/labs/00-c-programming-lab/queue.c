@@ -89,36 +89,40 @@ void q_free(queue_t *q) {
 
 /*
  * 模拟的test case
+ * q为NULL
+ * q不为NULL , head为NULL
+ *            head不为NULL
  *
+ *
+ * malloc失败,前面已分配的malloc需要free掉
+ *
+ * pass..
  *
  */
 bool q_insert_head(queue_t *q, char *s) {
-    if (q == NULL) {
-        return false;
-    }
+    if (q == NULL) {return false;}
 
-    list_ele_t *newh;
+    list_ele_t *new_header;
     /* What should you do if the q is NULL? */
-    newh = malloc(sizeof(list_ele_t));
-    if (newH == NULL) {
-        return false;
-    }
+    new_header = malloc(sizeof(list_ele_t));
+    if (new_header == NULL) {return false;}
     /* Don't forget to allocate space for the string and copy it */
     /* What if either call to malloc returns NULL? */
-    newh->next = q->head;
-    str = malloc(sizeof(char));
+    new_header->next = q->head;
+
+    char *str = malloc(sizeof(char));
     if (str == NULL) {
-        free(newh);
+        free(new_header);
         return false;
     }
-    newh->value = str
-    q->head = newh;
+    strcpy(str,s);
+    new_header->value = str;
+    q->head = new_header;
+
     return true;
 }
 
-/*
- *   head -> ele -> ele -> null
- */
+
 
 /*
   Attempt to insert element at tail of queue.
@@ -126,6 +130,14 @@ bool q_insert_head(queue_t *q, char *s) {
   Return false if q is NULL or could not allocate space.
   Argument s points to the string to be stored.
   The function must explicitly allocate space and copy the string into it.
+ */
+
+/*
+ *   head -> ele -> ele -> null
+ *
+ *   模拟的case
+ *
+ *
  */
 bool q_insert_tail(queue_t *q, char *s) {
     /* You need to write the complete code for this function */
