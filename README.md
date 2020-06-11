@@ -30,6 +30,9 @@ XOR is a binary operation, it stands for "exclusive or", that is to say the resu
 # Lab0 C Lab
 
 [wiki - c programming](https://en.wikibooks.org/wiki/C_Programming)
+[makefile cheatsheet](https://devhints.io/makefile)
+
+clion代码提示需要cmake , File -> new cmake project from source
 
 `随记: 做Lab形成的一个好习惯:先写和看test case ,再实现(最好过完完整的case再开始写) , 可以说test case的数量就是进度条长度`
 
