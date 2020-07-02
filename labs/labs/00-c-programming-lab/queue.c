@@ -19,11 +19,21 @@
 #include "queue.h"
 
 
+char *copy_string(char *s);
 
 /*
   Create empty queue.
   Return NULL if could not allocate space.
 */
+
+void q_insert_first(queue_t *q,list_ele_t *pEle) {
+    if (q==NULL) {
+        return;
+    }
+    q->head=pEle;
+    q->tail=pEle;
+    q->size++;
+}
 
 /*
  * 模拟的test case
@@ -139,20 +149,53 @@ bool q_insert_head(queue_t *q, char *s) {
  *
  *
  */
+
+
+char *copy_string(char *s) {
+    unsigned int len=strlen(s)+1;
+    char *dst = malloc(sizeof(char) * len );
+    if (dst==NULL) {
+        return NULL;
+    }
+    strcpy(dst,s);
+    dst[len - 1] = '\0';
+}
+
 bool q_insert_tail(queue_t *q, char *s) {
     /* You need to write the complete code for this function */
     /* Remember: It should operate in O(1) time */
+    if (q==NULL) {
+        return false;
+    }
+
     list_ele_t *ele = malloc(sizeof(list_ele_t));
     if (ele == NULL) {
         return false;
     }
-    ele->value = s;
+    //分配s 字符串大小的 char 数组 //然后复制
+    char *dst = copy_string(s);
 
-    q->tail->next = ele;
-    q->tail = ele;
+    if (dst==NULL) {
+        free(ele);
+        return false;
+    }
 
-    return false;
+
+    //赋值给 ele->value
+    ele->value = dst;
+
+    //如果 q 一个元素也没有
+    if (q->head==NULL) {
+        q_insert_first(q,ele);
+    } else {
+        q->tail->next = ele;
+        q->tail = q->tail->next;
+    }
+
+    return true;
 }
+
+
 
 /*
   Attempt to remove element from head of queue.
@@ -164,7 +207,20 @@ bool q_insert_tail(queue_t *q, char *s) {
 */
 bool q_remove_head(queue_t *q, char *sp, size_t bufsize) {
     /* You need to fix up this code. */
+    if (q==NULL) {
+        return false;
+    }
+    if (q->head==NULL) {
+        return false;
+    }
+
+
+    strcpy(sp,q->head->value);
+    free(q->head->value);
+    free(q->head);
     q->head = q->head->next;
+
+
     return true;
 }
 

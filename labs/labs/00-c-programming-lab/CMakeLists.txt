@@ -1,10 +1,9 @@
-cmake_minimum_required(VERSION 3.13)
+# cmake_minimum_required(VERSION <specify CMake version here>)
 project(00_c_programming_lab)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
-include_directories(traces)
 
 add_executable(00_c_programming_lab
     traces/trace-01-ops.cmd
@@ -23,6 +22,7 @@ add_executable(00_c_programming_lab
     traces/trace-14-perf.cmd
     traces/trace-15-perf.cmd
     traces/trace-eg.cmd
+    CMakeLists.txt
     console.c
     console.h
     driver.py
