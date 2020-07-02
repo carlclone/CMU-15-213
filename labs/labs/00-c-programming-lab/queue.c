@@ -18,29 +18,21 @@
 #include "harness.h"
 #include "queue.h"
 
-
-char *copy_string(char *s);
-
 /*
   Create empty queue.
   Return NULL if could not allocate space.
 */
 
-void q_insert_first(queue_t *q,list_ele_t *pEle) {
-    if (q==NULL) {
+void q_insert_first(queue_t *q, list_ele_t *pEle) {
+    if (q == NULL) {
         return;
     }
-    q->head=pEle;
-    q->tail=pEle;
+    q->head = pEle;
+    q->tail = pEle;
     q->size++;
 }
 
-/*
- * 模拟的test case
- * pass ......
- *
- *
- */
+
 queue_t *q_new() {
     queue_t *q = malloc(sizeof(queue_t));
     /* What if malloc returned NULL? */
@@ -110,24 +102,29 @@ void q_free(queue_t *q) {
  *
  */
 bool q_insert_head(queue_t *q, char *s) {
-    if (q == NULL) {return false;}
+    if (q == NULL) { return false; }
 
     list_ele_t *new_header;
     /* What should you do if the q is NULL? */
     new_header = malloc(sizeof(list_ele_t));
-    if (new_header == NULL) {return false;}
+    if (new_header == NULL) { return false; }
     /* Don't forget to allocate space for the string and copy it */
     /* What if either call to malloc returns NULL? */
-    new_header->next = q->head;
 
-    char *str = malloc(sizeof(char));
-    if (str == NULL) {
+    //复制字符串
+    char *dst = copy_string(s);
+    if (dst == NULL) {
         free(new_header);
         return false;
     }
-    strcpy(str,s);
-    new_header->value = str;
-    q->head = new_header;
+    //如果没有一个元素
+    if (q->head == NULL) {
+        q_insert_first(q, new_header);
+    } else {
+        //否则插入头部,修改 head 指针
+        new_header->next = q->head;
+        q->head = new_header;
+    }
 
     return true;
 }
@@ -152,19 +149,19 @@ bool q_insert_head(queue_t *q, char *s) {
 
 
 char *copy_string(char *s) {
-    unsigned int len=strlen(s)+1;
-    char *dst = malloc(sizeof(char) * len );
-    if (dst==NULL) {
+    unsigned int len = strlen(s) + 1;
+    char *dst = malloc(sizeof(char) * len);
+    if (dst == NULL) {
         return NULL;
     }
-    strcpy(dst,s);
+    strcpy(dst, s);
     dst[len - 1] = '\0';
 }
 
 bool q_insert_tail(queue_t *q, char *s) {
     /* You need to write the complete code for this function */
     /* Remember: It should operate in O(1) time */
-    if (q==NULL) {
+    if (q == NULL) {
         return false;
     }
 
@@ -175,7 +172,7 @@ bool q_insert_tail(queue_t *q, char *s) {
     //分配s 字符串大小的 char 数组 //然后复制
     char *dst = copy_string(s);
 
-    if (dst==NULL) {
+    if (dst == NULL) {
         free(ele);
         return false;
     }
@@ -185,8 +182,8 @@ bool q_insert_tail(queue_t *q, char *s) {
     ele->value = dst;
 
     //如果 q 一个元素也没有
-    if (q->head==NULL) {
-        q_insert_first(q,ele);
+    if (q->head == NULL) {
+        q_insert_first(q, ele);
     } else {
         q->tail->next = ele;
         q->tail = q->tail->next;
@@ -194,7 +191,6 @@ bool q_insert_tail(queue_t *q, char *s) {
 
     return true;
 }
-
 
 
 /*
@@ -205,21 +201,32 @@ bool q_insert_tail(queue_t *q, char *s) {
   (up to a maximum of bufsize-1 characters, plus a null terminator.)
   The space used by the list element and the string should be freed.
 */
+void free_an_ele(list_ele_t *pEle) {
+    free(pEle->value);
+    free(pEle);
+}
+
 bool q_remove_head(queue_t *q, char *sp, size_t bufsize) {
     /* You need to fix up this code. */
-    if (q==NULL) {
+    if (q == NULL) {
         return false;
     }
-    if (q->head==NULL) {
+    if (q->head == NULL) {
         return false;
     }
 
+    //sp 不为空,复制被删除的 string
+    if (sp) {
+        unsigned int len = strlen(q->head->value) + 1;
 
-    strcpy(sp,q->head->value);
-    free(q->head->value);
-    free(q->head);
+        strcpy(sp, q->head->value);
+        sp[len - 1] = '\0';
+    }
+
+    //删除 head 并且 free 掉所有空间
+    list_ele_t *remove_head = q->head;
     q->head = q->head->next;
-
+    free_an_ele(remove_head);
 
     return true;
 }
@@ -231,6 +238,9 @@ bool q_remove_head(queue_t *q, char *sp, size_t bufsize) {
 int q_size(queue_t *q) {
     /* You need to write the code for this function */
     /* Remember: It should operate in O(1) time */
+    if (!q) {
+        return 0;
+    }
     return q->size;
 }
 
