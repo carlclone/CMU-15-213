@@ -3,7 +3,9 @@ option fail 0
 option malloc 0
 new
 ih aardvark_bear_dolphin_gerbil_jaguar 5
+show
 it meerkat_panda_squirrel_vulture_wolf 5
+show
 rh aardvark_bear_dolphin_gerbil_jaguar
 reverse
 rh meerkat_panda_squirrel_vulture_wolf

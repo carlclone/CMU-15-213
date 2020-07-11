@@ -90,7 +90,3 @@ int q_size(queue_t *q);
   It should rearrange the existing ones.
  */
 void q_reverse(queue_t *q);
-
-char *copy_string(char *s);
-
-void free_an_ele(list_ele_t *pEle);
