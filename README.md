@@ -6,13 +6,16 @@
 - [ ] Bomb Lab
 - [ ] Attack Lab
 - [ ] Cache Lab
-- [ ] Shell Lab
+- [x] Shell Lab
 - [ ] Malloc Lab
 - [ ] Proxy Lab
 
+# Lab5 Shell Lab
+
+2020/07/11 ~
 
 
-# Lab1 Data Lab
+# Lab1 Data Lab  (to be continue...)
 
 [sof - xor](https://stackoverflow.com/questions/14526584/what-does-the-xor-operator-do)
 [wiki - xor](https://en.wikipedia.org/wiki/Exclusive_or)
