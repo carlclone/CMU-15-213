@@ -133,13 +133,11 @@ bool q_remove_head(queue_t *q, char *sp, size_t bufsize) {
         q->tail = NULL;
     }
     //Copied to sp
-    if(sp != NULL){
-        int counter = 0;
-        while(*((want_free -> value)+counter) != 0x00 && counter < (int) bufsize-1){
-            *(sp+counter) = *((want_free -> value)+counter);
-            counter += 1;
+    if (sp != NULL) {
+        strncpy(sp, want_free->value, bufsize);
+        if (strlen(want_free->value) > bufsize - 1) { /* If length bigger than bufsize, then mean cliped, so we need pad "\0"*/
+            sp[bufsize - 1] = '\0';
         }
-        *(sp+counter) = 0x00;
     }
     free(want_free->value);
     free(want_free);

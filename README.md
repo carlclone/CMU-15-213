@@ -46,7 +46,7 @@ clion代码提示需要cmake , File -> new cmake project from source
 
 4.画图定义伪代码测试用例,4大神器,养成条件反射吧 (面试时做算法题脑子一空,把这些也给忘了)
 
-
+5. sizeof 返回的是地址长度, strlen 返回的是不包含\0的字节长度
 
 # 资料
 
