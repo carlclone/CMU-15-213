@@ -158,18 +158,22 @@ int bitXor(int x, int y) {
      * 011 & 101 = 001
      */
 
-    int res1 = x & y;
-    int reverse_x = ~x;
-    int reverse_y = ~y;
+    //乱试的答案
+//    int res1 = x & y;
+//    int reverse_x = ~x;
+//    int reverse_y = ~y;
+//
+//    int res2 = reverse_x & reverse_y;
+//
+//    int rev_res1 = ~res1;
+//    int rev_res2 = ~res2;
+//
+//    return rev_res1 & rev_res2;
 
-    int res2 = reverse_x & reverse_y;
-
-    int rev_res1 = ~res1;
-    int rev_res2 = ~res2;
-
-    return rev_res1 & rev_res2;
+    //其实就是德摩根定理 , 画个图很好理解,不用乱试, ~(~A & ~B) = A|B
+    return ~(~x & ~y);
 }
-/* 
+/*
  * tmin - return minimum two's complement integer 
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 4
@@ -177,14 +181,9 @@ int bitXor(int x, int y) {
  */
 int tmin(void) {
     /*
-     * 最大的integer取反, +1
-     * 01111111111111111111...111
-     * 10000000000000000000...000
-     * 10000000000000000000...001
-     *
+     * 要理解好补码(int基本都是补码表示),记住最大最小值的计算 , 课程 PPT 有一张图很有用
      */
-//    return 1<<31+1;
-return 1;
+    return 1<<31;
 }
 //2
 /*
@@ -202,7 +201,7 @@ int isTmax(int x) {
      */
   return 2;
 }
-/* 
+/*
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
  *   Examples allOddBits(0xFFFFFFFD) = 0, allOddBits(0xAAAAAAAA) = 1
@@ -213,7 +212,7 @@ int isTmax(int x) {
 int allOddBits(int x) {
   return 2;
 }
-/* 
+/*
  * negate - return -x 
  *   Example: negate(1) = -1.
  *   Legal ops: ! ~ & ^ | + << >>
@@ -236,7 +235,7 @@ int negate(int x) {
 int isAsciiDigit(int x) {
   return 2;
 }
-/* 
+/*
  * conditional - same as x ? y : z 
  *   Example: conditional(2,4,5) = 4
  *   Legal ops: ! ~ & ^ | + << >>
@@ -246,7 +245,7 @@ int isAsciiDigit(int x) {
 int conditional(int x, int y, int z) {
   return 2;
 }
-/* 
+/*
  * isLessOrEqual - if x <= y  then return 1, else return 0 
  *   Example: isLessOrEqual(4,5) = 1.
  *   Legal ops: ! ~ & ^ | + << >>
@@ -298,7 +297,7 @@ int howManyBits(int x) {
 unsigned floatScale2(unsigned uf) {
   return 2;
 }
-/* 
+/*
  * floatFloat2Int - Return bit-level equivalent of expression (int) f
  *   for floating point argument f.
  *   Argument is passed as unsigned int, but
@@ -313,7 +312,7 @@ unsigned floatScale2(unsigned uf) {
 int floatFloat2Int(unsigned uf) {
   return 2;
 }
-/* 
+/*
  * floatPower2 - Return bit-level equivalent of the expression 2.0^x
  *   (2.0 raised to the power x) for any 32-bit integer x.
  *
