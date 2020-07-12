@@ -234,6 +234,7 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
+    //要想到布尔操作的集合运算规律 , 还有和十进制运算等价的运算 , 比如 == , !=如何表示
     return 2;
 }
 

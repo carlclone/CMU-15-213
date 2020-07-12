@@ -77,6 +77,10 @@ clion代码提示需要cmake , File -> new cmake project from source
 
 # 资料
 
+[更好的选择 CS61C](https://inst.eecs.berkeley.edu//~cs61c/sp15/) 
+
+> 二补数bai（2's complement）是一种用二进制表示有号数的方法，也是du一种将数字的zhi正负号变号的方式，常在计dao算机科学中使用。在中国大陆地区通常称作补码。 一个数字的二补数就是将该数字作位反相计算（即一补数），再将结果加 1，即为该数字的二补数。在二补数系统中，一个负数就是用其对应正数的二补数来表示。 
+
 [2020年 213系列的课表](https://www.cs.cmu.edu/~213/index.html)
 
 [往年的课表]()
@@ -84,6 +88,7 @@ clion代码提示需要cmake , File -> new cmake project from source
 [CSAPP书本上的Lab Start Code]()
 
 [CMU15-122 这门课的前置课程]()
+
 
 
 
