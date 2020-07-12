@@ -134,6 +134,15 @@ NOTES:
 
 
 #endif
+
+/*
+ * 参考
+ * https://www.bilibili.com/read/cv2926054
+ * https://skylark-workshop.xyz/blog/csapp-datalab-new/
+ * https://wdxtub.com/csapp/thick-csapp-lab-1/2016/04/16/
+ * https://wdxtub.com/csapp/thin-csapp-1/2016/04/16/
+ */
+
 //1
 /* 
  * bitXor - x^y using only ~ and & 
@@ -158,21 +167,25 @@ int bitXor(int x, int y) {
      * 011 & 101 = 001
      */
 
-    //乱试的答案
-//    int res1 = x & y;
-//    int reverse_x = ~x;
-//    int reverse_y = ~y;
-//
-//    int res2 = reverse_x & reverse_y;
-//
-//    int rev_res1 = ~res1;
-//    int rev_res2 = ~res2;
-//
-//    return rev_res1 & rev_res2;
+    int res1 = x & y;
+    int reverse_x = ~x;
+    int reverse_y = ~y;
 
-    //其实就是德摩根定理 , 画个图很好理解,不用乱试, ~(~A & ~B) = A|B
-    return ~(~x & ~y);
+    int res2 = reverse_x & reverse_y;
+
+    int rev_res1 = ~res1;
+    int rev_res2 = ~res2;
+
+    return rev_res1 & rev_res2;
+
 }
+
+//之前lab 的题目
+int bitOr(int x,int y) {
+    //其实就是德摩根定理 , 画个图很好理解, ~(~A & ~B) = A|B
+    return ~((~x) & (~y));
+}
+
 /*
  * tmin - return minimum two's complement integer 
  *   Legal ops: ! ~ & ^ | + << >>
@@ -182,8 +195,14 @@ int bitXor(int x, int y) {
 int tmin(void) {
     /*
      * 要理解好补码(int基本都是补码表示),记住最大最小值的计算 , 课程 PPT 有一张图很有用
+     * 10000000000000000...0 是最小值
      */
-    return 1<<31;
+    return 1 << 31;
+}
+
+//自己加了个 tmax
+int tmax(void) {
+    return ~(1 << 31);
 }
 //2
 /*
@@ -195,12 +214,17 @@ int tmin(void) {
  */
 int isTmax(int x) {
     /*
-     * 011111111111111111111...111
+     * 不能用0XFFFFFFFFFF,只能 0~255,tmax 用 tmin 计算出来
      *
-     * 思路:和最大值
+     * 思路:用 bitXor 判断与 tmax 是否不相等 , 然后结果取反 (是否相等)
+     * We could also say that the xor operation works just like !=,
+     * so by adding a ! to our xor implementation,
+     * we are literally just checking the equality like what == does.
      */
-  return 2;
+    int tmax = ~(1<<31);
+    return !(~(~x & ~tmax) & ~(x&tmax));
 }
+
 /*
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
@@ -210,8 +234,9 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
-  return 2;
+    return 2;
 }
+
 /*
  * negate - return -x 
  *   Example: negate(1) = -1.
@@ -220,7 +245,7 @@ int allOddBits(int x) {
  *   Rating: 2
  */
 int negate(int x) {
-  return 2;
+    return 2;
 }
 //3
 /* 
@@ -233,8 +258,9 @@ int negate(int x) {
  *   Rating: 3
  */
 int isAsciiDigit(int x) {
-  return 2;
+    return 2;
 }
+
 /*
  * conditional - same as x ? y : z 
  *   Example: conditional(2,4,5) = 4
@@ -243,8 +269,9 @@ int isAsciiDigit(int x) {
  *   Rating: 3
  */
 int conditional(int x, int y, int z) {
-  return 2;
+    return 2;
 }
+
 /*
  * isLessOrEqual - if x <= y  then return 1, else return 0 
  *   Example: isLessOrEqual(4,5) = 1.
@@ -253,7 +280,7 @@ int conditional(int x, int y, int z) {
  *   Rating: 3
  */
 int isLessOrEqual(int x, int y) {
-  return 2;
+    return 2;
 }
 //4
 /* 
@@ -265,8 +292,9 @@ int isLessOrEqual(int x, int y) {
  *   Rating: 4 
  */
 int logicalNeg(int x) {
-  return 2;
+    return 2;
 }
+
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
  *  Examples: howManyBits(12) = 5
@@ -280,7 +308,7 @@ int logicalNeg(int x) {
  *  Rating: 4
  */
 int howManyBits(int x) {
-  return 0;
+    return 0;
 }
 //float
 /* 
@@ -295,8 +323,9 @@ int howManyBits(int x) {
  *   Rating: 4
  */
 unsigned floatScale2(unsigned uf) {
-  return 2;
+    return 2;
 }
+
 /*
  * floatFloat2Int - Return bit-level equivalent of expression (int) f
  *   for floating point argument f.
@@ -310,8 +339,9 @@ unsigned floatScale2(unsigned uf) {
  *   Rating: 4
  */
 int floatFloat2Int(unsigned uf) {
-  return 2;
+    return 2;
 }
+
 /*
  * floatPower2 - Return bit-level equivalent of the expression 2.0^x
  *   (2.0 raised to the power x) for any 32-bit integer x.
