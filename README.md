@@ -48,7 +48,7 @@ XOR is a binary operation, it stands for "exclusive or", that is to say the resu
 
 对补码表示的理解 , 看图 , 图来自[读薄 CSAPP](https://wdxtub.com/csapp/thin-csapp-1/2016/04/16/)
 
-![twoscomplement](https://github.com/carlclone/CMU-15-213/tree/master/notes/twoscomplement.png)
+![twoscomplement](https://raw.githubusercontent.com/carlclone/CMU-15-213/master/notes/twoscomplement.png)
 
 > isTmax
 
