@@ -3,6 +3,9 @@
 
 - [x] C Programming Lab
 - [ ] Data Lab
+    - [x] bitXor
+    - [x] tmin
+    - [x] isTmax
 - [ ] Bomb Lab
 - [ ] Attack Lab
 - [ ] Cache Lab
@@ -29,6 +32,27 @@ What is XOR operation?
 XOR is a binary operation, it stands for "exclusive or", that is to say the resulting bit evaluates to one if only exactly one of the bits is set. ... Properties: The operation is commutative, associative and self-inverse. It is also the same as addition modulo 2
 ```
 
+> 相关章节笔记
+
+[读薄 CSAPP,数据表示](https://wdxtub.com/csapp/thin-csapp-1/2016/04/16/)
+
+二进制里的集合运算经常用于各种项目(比如 redis)里的状态压缩表示
+
+> xor 
+
+回家的路上一个一个试出来的 ,后来看了这篇[总结](https://skylark-workshop.xyz/blog/csapp-datalab-new/),知道了德摩根定理和xor 的实现公式
+
+`not(not a and not b) = a or b (i.e. ~(~x & ~y) = x | y) (De Morgan's laws) and (x or y) and not(x and y) = x xor y`
+
+> tmin
+
+对补码表示的理解 , 看图 , 图来自[读薄 CSAPP](https://wdxtub.com/csapp/thin-csapp-1/2016/04/16/)
+
+![twoscomplement](https://github.com/carlclone/CMU-15-213/tree/master/notes/twoscomplement.png)
+
+> isTmax
+
+xor 相当于二进制里的!=号, !取反则是二进制里的等号
 
 # Lab0 C Lab
 
