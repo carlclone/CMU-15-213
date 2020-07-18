@@ -8,10 +8,10 @@
     - [x] isTmax
 - [ ] Bomb Lab
 - [ ] Attack Lab
-- [ ] Cache Lab
+- [x] Cache Lab
 - [x] Shell Lab
 - [ ] Malloc Lab
-- [ ] Proxy Lab
+- [x] Proxy Lab
 
 # Lab5 Shell Lab
 
