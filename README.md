@@ -15,7 +15,22 @@
 
 # Lab5 Shell Lab
 
-2020/07/11 ~
+2020/07/11 ~ 2020/07/19
+
+参考资料:
+
+- CSAPP3e Chapter 8
+- [Lab Guide](http://csapp.cs.cmu.edu/3e/shlab.pdf)
+
+```
+https://zhuanlan.zhihu.com/p/28695244
+https://zhuanlan.zhihu.com/p/89224358
+https://zhuanlan.zhihu.com/p/119034923
+https://zhuanlan.zhihu.com/p/58362429
+https://www.bilibili.com/read/cv2962007/
+https://zhuanlan.zhihu.com/p/34167162
+```
+
 
 
 # Lab1 Data Lab  (to be continue...)
