@@ -8,10 +8,10 @@
     - [x] isTmax
 - [ ] Bomb Lab
 - [ ] Attack Lab
-- [x] Cache Lab
-- [x] Shell Lab
+- [ ] Cache Lab
+- [x] [Shell Lab](https://github.com/carlclone/CMU-15-213/tree/master/labs/labs/05-shell-lab-lab)
 - [ ] Malloc Lab
-- [x] Proxy Lab
+- [x] [Proxy Lab](https://github.com/carlclone/CMU-15-213/tree/master/labs/labs/07-proxy-lab/readme.md)
 
 # Lab5 Shell Lab
 
