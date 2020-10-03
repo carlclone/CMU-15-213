@@ -129,6 +129,8 @@ man page (查阅系统调用函数, 查阅命令使用)
 
 ## 执行命令的主流程 
 
+![image-20201003174855077](assets/images/image-20201003174855077.png)
+
 ```mermaid
 sequenceDiagram
 participant client
@@ -150,6 +152,8 @@ client->>proc:sent 'ls'
 ```
 
 ## 暂停,前后台切换流程
+
+![image-20201003174910566](assets/images/image-20201003174910566.png)
 
 ```mermaid
 sequenceDiagram
