@@ -277,6 +277,11 @@ int builtin_cmd(char **argv) {
     if (strcmp("quit", argv[0]) == 0) {
         exit(0);
     }
+    if (strcmp("jobs", argv[0]) == 0) {
+        listjobs(jobs);
+    }
+
+
     return 0;     /* not a builtin command */
 }
 
@@ -319,6 +324,13 @@ void sigchld_handler(int sig) {
  *    to the foreground job.
  */
 void sigint_handler(int sig) {
+
+    pid_t pid = fgpid(jobs);
+    if (pid != 0) {
+        //用户 ctrl+c , 父进程给子进程组发送 SIGINT 终止运行
+        kill(-pid, SIGINT);
+    }
+
     return;
 }
 
