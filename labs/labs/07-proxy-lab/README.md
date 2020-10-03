@@ -16,3 +16,15 @@
 # part3 缓存
 
 LRU策略
+
+
+# 资料
+
+csapp 第三版后三章
+参考 tiny 目录的 tiny httpserver
+http://csapp.cs.cmu.edu/3e/labs.html
+
+# 测试方式
+
+
+# task 分解
