@@ -184,6 +184,7 @@ int main(int argc, char **argv) {
 */
 void eval(char *cmdline) {
     pid_t pid;
+    sigset_t mask;
     // 解析参数字符串 '/bin/ls -l' => [/bin/ls , -l]
     char *argv[MAXARGS]; // char array[3]; is an array of 3 char. char *array[3]; is an array of 3 pointers to char.
     //由于需要改变指针变量的值(指向新字符串的第一个 char 的指针,字符串数组元素之间不一定是连续保存的),所以传入的是 pointer to pointer
@@ -195,8 +196,13 @@ void eval(char *cmdline) {
     //内置命令直接执行 , 否则 fork 后执行
     if (!builtin_cmd(argv)) {
 
-        if ((pid = fork()) == 0) { //child process
+        //阻塞信号,相当于锁 lock->lock() ,  sigchld_handler()需要等待
+        sigemptyset(&mask);
+        sigaddset(&mask,SIGCHLD);
+        sigprocmask(SIG_BLOCK,&mask,NULL);
 
+        if ((pid = fork()) == 0) { //child process
+            sigprocmask(SIG_UNBLOCK,&mask,NULL); // 子进程继承了信号阻塞,去掉,否则处理不了子子进程的信号
             setpgid(0,0); //脱离进程组, 防止所有子进程收到ctrl+c 信号 , 由父进程手动发给前台进程
             //传入第一个元素 path,剩余的作为参数传入
             if (execv(argv[0], argv) < 0) {
@@ -206,6 +212,7 @@ void eval(char *cmdline) {
         }
         //加入到 joblist
         addjob(jobs, pid, bg ? BG : FG, cmdline);
+        sigprocmask(SIG_UNBLOCK,&mask,NULL); // lock->unlock()
 
 
         if (!bg) {
@@ -361,6 +368,7 @@ void waitfg(pid_t pid) {
  *     currently running children to terminate.
  */
 void sigchld_handler(int sig) {
+    //todo;细分提示信息
     pid_t pid = wait(NULL);
     deletejob(jobs, pid);
     return;
@@ -390,7 +398,7 @@ void sigint_handler(int sig) {
 void sigtstp_handler(int sig) {
     pid_t pid = fgpid(jobs);
     if (pid != 0) {
-        //用户 ctrl+c , 父进程给子进程组发送 SIGINT 终止运行
+        //用户 ctrl+c , 父进程给子进程组发送 SIGTSTP 终止运行
         kill(-pid, SIGTSTP);
     }
     return;
