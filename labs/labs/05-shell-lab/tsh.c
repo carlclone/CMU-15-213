@@ -296,6 +296,46 @@ int builtin_cmd(char **argv) {
  */
 void do_bgfg(char **argv) {
 
+    //find job   &1 jobid  |   1 processid
+    pid_t  pid;
+    struct job_t *job;
+    char *id = argv[1];
+    if (id==NULL) {
+        printf("jobid(%jobid) or pid(pid) required");
+        return;
+    }
+
+    if (id[0]=="%") {
+        int jobid = atoi(&id[1]);
+        getjobjid(job,jobid);
+        if (job==NULL) {
+            printf("job not found");
+            return;
+        }
+    } else if (isdigit(id[0])) {
+        int pid = atoi(&id[0]);
+        getjobpid(job, pid);
+        if (job==NULL) {
+            printf("process not found");
+            return;
+        }
+    } else {
+        printf("wrong format");
+        return;
+    }
+
+
+    // SIGCONT , 可能在 STP 状态
+    kill(-(job->pid), SIGCONT);
+
+    // set state
+    if (strcmp("bg", argv[0]) == 0) {
+        job->state = BG;
+        printf("run in background now");
+    } else {
+        job->state = FG;
+        waitfg(job->pid);
+    }
 
     return;
 }
