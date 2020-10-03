@@ -196,6 +196,8 @@ void eval(char *cmdline) {
     if (!builtin_cmd(argv)) {
 
         if ((pid = fork()) == 0) { //child process
+
+            setpgid(0,0); //脱离进程组, 防止所有子进程收到ctrl+c 信号 , 由父进程手动发给前台进程
             //传入第一个元素 path,剩余的作为参数传入
             if (execv(argv[0], argv) < 0) {
                 printf("command not found");
@@ -280,6 +282,10 @@ int builtin_cmd(char **argv) {
     if (strcmp("jobs", argv[0]) == 0) {
         listjobs(jobs);
     }
+    if (strcmp("bg", argv[0]) == 0 || strcmp("fg", argv[0]) == 0) {
+        do_bgfg(argv);
+    }
+
 
 
     return 0;     /* not a builtin command */
@@ -289,6 +295,8 @@ int builtin_cmd(char **argv) {
  * do_bgfg - Execute the builtin bg and fg commands
  */
 void do_bgfg(char **argv) {
+
+
     return;
 }
 
@@ -340,6 +348,11 @@ void sigint_handler(int sig) {
  *     foreground job by sending it a SIGTSTP.
  */
 void sigtstp_handler(int sig) {
+    pid_t pid = fgpid(jobs);
+    if (pid != 0) {
+        //用户 ctrl+c , 父进程给子进程组发送 SIGINT 终止运行
+        kill(-pid, SIGTSTP);
+    }
     return;
 }
 
