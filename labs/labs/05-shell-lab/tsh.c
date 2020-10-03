@@ -170,13 +170,16 @@ void eval(char *cmdline)
     char *argv[MAXARGS]; // char array[3]; is an array of 3 char. char *array[3]; is an array of 3 pointers to char.
     //由于需要改变指针变量的值(指向新字符串的第一个 char 的指针,字符串数组元素之间不一定是连续保存的),所以传入的是 pointer to pointer
     //在 c 里,数组和字符串都只是指针而已
-    int bg = parseline(cmdline,argv); //todo; 为什么**argv , 为什么传入的是*argv[MAXARGS]
+    int bg = parseline(cmdline,argv);
     //内置命令直接执行 , 否则 fork 后执行
     if (!builtin_cmd(argv)) {
 
         if (fork() == 0) { //child process
             //传入第一个元素 path,剩余的作为参数传入
-            execv(argv[0],argv);
+            if (execv(argv[0],argv) <0) {
+                printf("command not found");
+                exit(0);
+            }
         }
         if (!bg) {
             wait(NULL);//NULL means i dont care about the ret val about the child process
