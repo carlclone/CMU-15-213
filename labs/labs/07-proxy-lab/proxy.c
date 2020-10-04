@@ -101,7 +101,7 @@ void doit(int fd) {
 }
 
 void *thread(void *vargp) {
-    Pthread_detach(pthread_self()); //detach
+    Pthread_detach(pthread_self()); //detach后才能被系统自动回收
     //每个线程会轮询sbuf 取出connfd 进行处理
     while (1) {
         int connfd = sbuf_remove(&sbuf);

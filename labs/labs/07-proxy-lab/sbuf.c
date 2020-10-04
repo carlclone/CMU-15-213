@@ -2,6 +2,8 @@
 #include "csapp.h"
 #include "sbuf.h"
 
+//类似 go 的 buffered channel , 用信号量实现互斥
+
 /* Create an empty, bounded, shared FIFO buffer with n slots */
 /* $begin sbuf_init */
 void sbuf_init(sbuf_t *sp, int n)
