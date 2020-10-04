@@ -18,8 +18,8 @@ int main(int argc, char **argv)
 {
     int listenfd, connfd;
     char hostname[MAXLINE], port[MAXLINE];
-    socklen_t clientlen;
-    struct sockaddr_storage clientaddr;
+    socklen_t clientlen; //客户端地址结构字节长度
+    struct sockaddr_storage clientaddr; //客户端地址结构体
 
     /* Check command line args */
     if (argc != 2) {
@@ -30,6 +30,7 @@ int main(int argc, char **argv)
     listenfd = Open_listenfd(argv[1]);
     while (1) {
 	clientlen = sizeof(clientaddr);
+	//强转成 sockaddr
 	connfd = Accept(listenfd, (SA *)&clientaddr, &clientlen); //line:netp:tiny:accept
         Getnameinfo((SA *) &clientaddr, clientlen, hostname, MAXLINE, 
                     port, MAXLINE, 0);
