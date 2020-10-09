@@ -218,6 +218,8 @@ void eval(char *cmdline) {
         if (!bg) {
             waitfg(pid);
             // 回收子进程这一步放到 sigchld_handler 里了 // wait(NULL);//NULL means i dont care about the ret val about the child process
+        } else {
+            printf("process running on background\n");
         }
     }
 
@@ -372,7 +374,9 @@ void waitfg(pid_t pid) {
  *     currently running children to terminate.
  */
 void sigchld_handler(int sig) {
-    pid_t pid = wait(NULL);
+
+    int status;
+    pid_t pid;
     while((pid = waitpid(-1, &status, WNOHANG | WUNTRACED)) > 0){
         if(WIFEXITED(status)){
             deletejob(jobs, pid);
