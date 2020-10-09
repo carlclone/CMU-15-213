@@ -285,12 +285,15 @@ int parseline(const char *cmdline, char **argv) {
 int builtin_cmd(char **argv) {
     if (strcmp("quit", argv[0]) == 0) {
         exit(0);
+        return 1;
     }
     if (strcmp("jobs", argv[0]) == 0) {
         listjobs(jobs);
+        return 1;
     }
     if (strcmp("bg", argv[0]) == 0 || strcmp("fg", argv[0]) == 0) {
         do_bgfg(argv);
+        return 1;
     }
 
 
@@ -314,14 +317,14 @@ void do_bgfg(char **argv) {
 
     if (id[0]=="%") {
         int jobid = atoi(&id[1]);
-        getjobjid(job,jobid);
+        job = getjobjid(jobs,jobid);
         if (job==NULL) {
             printf("job not found");
             return;
         }
     } else if (isdigit(id[0])) {
-        int pid = atoi(&id[0]);
-        getjobpid(job, pid);
+        int pid = atoi(id);
+        job = getjobpid(jobs, pid);
         if (job==NULL) {
             printf("process not found");
             return;
@@ -354,6 +357,7 @@ void waitfg(pid_t pid) {
     while (fgpid(jobs)==pid) {
         sleep(1);
     }
+    return ;
 }
 
 /*****************
