@@ -368,9 +368,24 @@ void waitfg(pid_t pid) {
  *     currently running children to terminate.
  */
 void sigchld_handler(int sig) {
-    //todo;细分提示信息
     pid_t pid = wait(NULL);
-    deletejob(jobs, pid);
+    while((pid = waitpid(-1, &status, WNOHANG | WUNTRACED)) > 0){
+        if(WIFEXITED(status)){
+            deletejob(jobs, pid);
+        }
+        if(WIFSTOPPED(status)){
+            struct job_t *job = getjobpid(jobs, pid);
+            int jid = pid2jid(pid);
+            printf("Job [%d] (%d) stopped by signal %d\n",jid, pid, WSTOPSIG(status));
+            job->state = ST;
+        }
+        if(WIFSIGNALED(status)){
+            int jid = pid2jid(pid);
+            printf("Job [%d] (%d) terminated by signal %d\n",jid, pid, WTERMSIG(status));
+            deletejob(jobs, pid);
+        }
+    }
+
     return;
 }
 
