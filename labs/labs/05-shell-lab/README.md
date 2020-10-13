@@ -26,7 +26,7 @@
 - 信号是不排队的 , sigchld只回收了一个进程 , 也产生僵尸进程
 
 - 没有对 execve 不存在的进行判断 ,子进程跳过 execve 继续执行 tsh 剩余代码, 成了 tsh 套娃
-
+image-20201009085919491.png
    ![image-20201003114320000](assets/images/image-20201003114320000.png)
 
   ![image-20201003114446424](assets/images/image-20201003114446424.png)
