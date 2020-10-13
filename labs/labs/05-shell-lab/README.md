@@ -27,9 +27,9 @@
 
 - 没有对 execve 不存在的进行判断 ,子进程跳过 execve 继续执行 tsh 剩余代码, 成了 tsh 套娃
 
-   ![image-20201003114320000](/images/image-20201003114320000.png)
+   ![image-20201003114320000](/assets/image-20201003114320000.png)
 
-  ![image-20201003114446424](/images/image-20201003114446424.png)
+  ![image-20201003114446424](/assets/image-20201003114446424.png)
 
 - 未修改子进程的 pgid , 导致后台进程也收到信号被杀掉了 (trace07 子进程需要脱离进程组, 否则所有子进程都会被杀掉)
 
@@ -43,7 +43,7 @@
 
 ### 执行命令的主流程 
 
-![image-20201003174855077](/images/image-20201003174855077.png)
+![image-20201003174855077](/assets/image-20201003174855077.png)
 
 ```mermaid
 sequenceDiagram
@@ -67,7 +67,7 @@ client->>proc:sent 'ls'
 
 ### 暂停,前后台切换流程
 
-![image-20201003174910566](/images/image-20201003174910566.png)
+![image-20201003174910566](/assets/image-20201003174910566.png)
 
 ```mermaid
 sequenceDiagram
@@ -95,7 +95,7 @@ subProc->>subProc:start running
 
 ### 信号处理流程 , 信号进程的并发竞争问题, 信号没有排队机制
 
-![image-20201009085919491](/images/image-20201009085919491.png)
+![image-20201009085919491](/assets/image-20201009085919491.png)
 
 ```mermaid
 sequenceDiagram
@@ -194,11 +194,11 @@ man page (查阅系统调用函数, 查阅命令使用)
 
 `bt` 打印 backtrace
 
-![image-20201003131138951](/images/image-20201003131138951.png)
+![image-20201003131138951](/assets/image-20201003131138951.png)
 
 `frame`
 
-![image-20201003131230478](/images/image-20201003131230478.png)
+![image-20201003131230478](/assets/image-20201003131230478.png)
 
 `call fgpid(jobs)` 可以实时调用函数!  (clion 的 evaluate expression 好像也可以)
 
@@ -214,7 +214,7 @@ man page (查阅系统调用函数, 查阅命令使用)
 
 `detach inferior 3` 放弃控制该进程
 
-![image-20201003132247872](/images/image-20201003132247872.png)
+![image-20201003132247872](/assets/image-20201003132247872.png)
 
 `info break`  断点列表
 
